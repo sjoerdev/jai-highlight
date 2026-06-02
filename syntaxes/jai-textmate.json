@@ -1,0 +1,69 @@
+{
+  "scopeName": "source.jai",
+  "name": "Jai",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#numbers" },
+    { "include": "#keywords" },
+    { "include": "#types" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.jai",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.jai",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.jai",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.jai",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.jai",
+          "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+        }
+      ]
+    },
+
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.jai",
+          "match": "\\b(size_of|type_of|using|cast|if|ifx|then|else|for|while|break|continue|remove|return|defer|inline)\\b"
+        }
+      ]
+    },
+
+    "types": {
+      "patterns": [
+        {
+          "name": "storage.type.jai",
+          "match": "\\b(bool|true|false|int|s8|u8|s16|u16|s32|u32|s64|u64|float|float32|float64|void|string|enum|struct|union)\\b"
+        }
+      ]
+    }
+  }
+}
