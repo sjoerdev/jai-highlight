@@ -61,7 +61,7 @@
       "patterns": [
         {
           "name": "storage.type.jai",
-          "match": "\\b(bool|true|false|int|s8|u8|s16|u16|s32|u32|s64|u64|float|float32|float64|void|string|enum|struct|union)\\b"
+          "match": "\\b(bool|true|false|int|s8|u8|s16|u16|s32|u32|s64|u64|float|float32|float64|void|string|enum|struct|union|Type)\\b"
         }
       ]
     }
