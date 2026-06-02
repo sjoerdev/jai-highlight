@@ -1,0 +1,4 @@
+.git
+.vscodeignore
+*.vsix
+*.ps1
