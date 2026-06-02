@@ -1,4 +1,7 @@
 {
+    "name": "jai-syntax",
+    "version": "0.0.1",
+    "publisher": "local",
     "contributes": {
         "languages": [
             {
