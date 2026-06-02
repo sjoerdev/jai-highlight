@@ -1,4 +1,4 @@
-# install the extension
+# install or update the extension
 
 vsce package
 $vsix = Get-ChildItem -Filter "*.vsix"
