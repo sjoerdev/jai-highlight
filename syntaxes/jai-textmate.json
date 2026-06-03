@@ -4,6 +4,7 @@
   "patterns": [
     { "include": "#comments" },
     { "include": "#strings" },
+    { "include": "#symbols" },
     { "include": "#numbers" },
     { "include": "#keywords" },
     { "include": "#types" },
@@ -37,6 +38,19 @@
             }
           ]
         }
+      ]
+    },
+
+    "symbols": {
+			"patterns": [
+				{
+					"name": "keyword.declaration.jai",
+					"match": "(::|:=|:)"
+				},
+				{
+					"name": "keyword.operator.jai",
+					"match": "(=|\\+|-|\\*|/|<|>)"
+				}
       ]
     },
 
